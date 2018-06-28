@@ -10,6 +10,9 @@ public class Product {
 
     private String id;
     private String name;
+    /**
+     * @see com.jyj.entity.enums.ProductStatus
+     */
     private String status;
     //起投金额
     private BigDecimal thresholdAmount;
