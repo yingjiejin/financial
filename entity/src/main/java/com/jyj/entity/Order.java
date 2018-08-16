@@ -1,18 +1,28 @@
 package com.jyj.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * 订单
  */
+@Entity(name = "order_t")
 public class Order {
 
+    @Id
     private String orderId;
     private String chanId;
     private String productId;
     private String chanUserId;
+    /**
+     * @see com.jyj.entity.enums.OrderType
+     */
     private String orderType;
+    /**
+     * @see com.jyj.entity.enums.OrderStatus
+     */
     private String orderStatus;
     private String outerOrderId;
     private BigDecimal amount;

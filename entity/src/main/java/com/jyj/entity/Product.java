@@ -1,13 +1,17 @@
 package com.jyj.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * 产品
  */
+@Entity
 public class Product {
 
+    @Id
     private String id;
     private String name;
     /**
@@ -27,6 +31,19 @@ public class Product {
     private Date updateAt;
     private String createUser;
     private String updateUser;
+
+
+    public Product() {
+    }
+
+    public Product(String id, String name, String status, BigDecimal thresholdAmount, BigDecimal stepAmount, BigDecimal rewardRate) {
+        this.id = id;
+        this.name = name;
+        this.status = status;
+        this.thresholdAmount = thresholdAmount;
+        this.stepAmount = stepAmount;
+        this.rewardRate = rewardRate;
+    }
 
     public String getId() {
         return id;
