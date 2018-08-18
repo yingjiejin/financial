@@ -72,16 +72,12 @@
           <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.15" />
           <element id="library" level="project" name="Gradle: xml-apis:xml-apis:1.0.b2" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.11" />
-          <element id="archive" name="financial-util.jar">
-            <element id="module-output" name="util_main" />
-            <element id="dir-copy" path="$PROJECT_DIR$/util/out/production/resources" />
-          </element>
-          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.29" />
           <element id="archive" name="financial-swagger.jar">
             <element id="module-output" name="swagger_main" />
             <element id="dir-copy" path="$PROJECT_DIR$/swagger/out/production/resources" />
           </element>
           <element id="library" level="project" name="Gradle: io.springfox:springfox-swagger2:2.7.0" />
+          <element id="library" level="project" name="Gradle: io.springfox:springfox-swagger-ui:2.7.0" />
           <element id="library" level="project" name="Gradle: io.swagger:swagger-annotations:1.5.13" />
           <element id="library" level="project" name="Gradle: io.swagger:swagger-models:1.5.13" />
           <element id="library" level="project" name="Gradle: io.springfox:springfox-spi:2.7.0" />
@@ -98,7 +94,11 @@
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.5" />
           <element id="library" level="project" name="Gradle: com.google.guava:guava:20.0" />
           <element id="library" level="project" name="Gradle: org.javassist:javassist:3.21.0-GA" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-ui/2.7.0/92608eb6c2056810b4e3189196b4e8cce645d6de/springfox-swagger-ui-2.7.0.jar" />
+          <element id="archive" name="financial-util.jar">
+            <element id="module-output" name="util_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/util/out/production/resources" />
+          </element>
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.29" />
         </element>
       </element>
     </root>

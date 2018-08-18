@@ -2,6 +2,7 @@ package com.jyj.manager.controller;
 
 import com.jyj.entity.Product;
 import com.jyj.manager.service.ProductService;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @ApiOperation(value = "创建产品",notes = "根据对应业务规则添加相应产品 ")
     @PostMapping(value = "/addProduct")
     public Product addProduct(@RequestBody Product product) {
         log.info("创建产品，参数：{}", product);
