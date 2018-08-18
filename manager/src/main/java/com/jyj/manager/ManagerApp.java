@@ -1,5 +1,6 @@
 package com.jyj.manager;
 
+import com.jyj.swagger.EnableMySwagger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
